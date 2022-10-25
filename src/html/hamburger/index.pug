@@ -1,0 +1,20 @@
+extends ../_layout/_page.pug
+
+block vars
+  -
+    var page = data.pages.hamburger
+
+block contentFixedBefore
+
+block contentStatic
+
+  main.l-main.l-main--v1
+    .l-contents-in
+      button.p-hamburger-trigger(type="button")
+        span.p-hamburger-trigger__in
+          span
+          span
+
+
+
+block contentFixedAfter

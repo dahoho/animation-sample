@@ -8,6 +8,7 @@ const init = async () => {
   require('./init/parallax-img').default(); //parallax-img
   require('./init/text-animation').default(); //text-animation
   require('./init/mouseStalker').default(); //mouseStalker
+  require('./init/hamburger').default(); //hamburger
 
   // ブラウザ（デバイス）分岐処理
   const HtmlElement = document.querySelector('html');

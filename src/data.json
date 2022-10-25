@@ -54,6 +54,16 @@
       "directory": "mousestalker/",
       "path": "../",
       "ogpImg": "ogp.jpg"
+    },
+    "hamburger": {
+      "id": "hamburger",
+      "category": "hamburger",
+      "root": "pages",
+      "title": "",
+      "description": "",
+      "directory": "hamburger/",
+      "path": "../",
+      "ogpImg": "ogp.jpg"
     }
   }
 }
