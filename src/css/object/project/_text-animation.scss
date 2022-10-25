@@ -3,3 +3,23 @@
     opacity: 0;
   }
 }
+
+.p-text-animation-curtain {
+  position: relative;
+  overflow: hidden;
+  // センター寄せする場合
+  max-inline-size: max-content;
+  margin-inline: auto;
+  // センター寄せしない場合
+  // display: inline-block;
+  &__rect {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    content: '';
+    background-color: #30a2d2;
+  }
+}

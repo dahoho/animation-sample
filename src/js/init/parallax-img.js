@@ -3,7 +3,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function () {
-  window.addEventListener('load', () => {
+  window.addEventListener('DOMContentLoaded', () => {
     const targets = [...document.querySelectorAll('.js-parallax-img')];
 
     targets.map((target) => {

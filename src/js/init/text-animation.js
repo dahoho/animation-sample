@@ -1,8 +1,11 @@
 import { gsap } from 'gsap';
 
 export default function () {
-  window.addEventListener('load', () => {
-    /* 文字列を分割しspanで囲む */
+  // =======================================================================
+  // 1文字づつ表示
+  // =======================================================================
+  window.addEventListener('DOMContentLoaded', () => {
+    // 文字列を分割しspanで囲む
     const textAnimation = [...document.querySelectorAll('.js-text-animation')];
 
     textAnimation.map((target) => {
@@ -15,8 +18,7 @@ export default function () {
 
       target.innerHTML = newText;
     });
-
-    //gsapここから
+    // gsapここから
     const textAnimationTarget = [...document.querySelectorAll('.js-text-animation span')];
     gsap.to(textAnimationTarget, {
       opacity: 1,
@@ -25,6 +27,27 @@ export default function () {
         from: 'start', //要素順にアニメーション。
         ease: 'sine.in', //イージング詳細:https://greensock.com/docs/v3/Eases
       },
+    });
+  });
+  // =======================================================================
+  // カーテンアニメーション
+  // =======================================================================
+  window.addEventListener('DOMContentLoaded', () => {
+    const rect = [...document.querySelectorAll('.js-text-animation-curtain .p-text-animation-curtain__rect')];
+    const text = [...document.querySelectorAll('.js-text-animation-curtain .p-text-animation-curtain__text')];
+    gsap.set(rect, {
+      x: '-105%',
+    });
+    gsap.set(text, {
+      opacity: 0,
+    });
+    gsap.to(text, {
+      opacity: 1,
+      delay: 0.4,
+    });
+    gsap.to(rect, {
+      x: '105%',
+      duration: 1.2,
     });
   });
 }
