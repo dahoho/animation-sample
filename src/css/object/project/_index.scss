@@ -1,0 +1,19 @@
+.p-index-list {
+  &__item {
+    &:not(:first-of-type) {
+      margin-top: 20px;
+      @include l-mobile {
+        margin-top: sp(20);
+      }
+    }
+    a {
+      @include fs-all(18, 24);
+      text-decoration: underline;
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

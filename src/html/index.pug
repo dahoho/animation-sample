@@ -1,0 +1,25 @@
+extends ./_layout/_page.pug
+
+block vars
+  -
+    var page = data.pages.index
+
+block contentFixedBefore
+
+block contentStatic
+
+  main.l-main
+    .l-contents-in
+      ul.p-index-list
+        li.p-index-list__item
+          a(href=`${page.path}parallax-img`) parallax-img
+        li.p-index-list__item
+          a(href=`${page.path}fade-img`) fade-img
+        li.p-index-list__item
+          a(href=`${page.path}text-animation`) text-animation
+        li.p-index-list__item
+          a(href=`${page.path}mousestalker`) mousestalker
+
+
+
+block contentFixedAfter

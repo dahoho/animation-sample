@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "websiteName": "Animation｜SAMPLE",
+    "websiteDomain": "",
+    "themeColor": ""
+  },
+  "pages": {
+    "index": {
+      "id": "index",
+      "category": "index",
+      "root": "pages",
+      "title": "",
+      "description": "",
+      "directory": "index.html",
+      "path": "",
+      "ogpImg": "ogp.jpg"
+    },
+    "parallax_img": {
+      "id": "parallax-img",
+      "category": "parallax-img",
+      "root": "pages",
+      "title": "",
+      "description": "",
+      "directory": "parallax-img/",
+      "path": "../",
+      "ogpImg": "ogp.jpg"
+    },
+    "fade_img": {
+      "id": "fade-img",
+      "category": "fade-img",
+      "root": "pages",
+      "title": "",
+      "description": "",
+      "directory": "fade-img/",
+      "path": "../",
+      "ogpImg": "ogp.jpg"
+    },
+    "text_animation": {
+      "id": "text-animation",
+      "category": "text-animation",
+      "root": "pages",
+      "title": "",
+      "description": "",
+      "directory": "text-animation/",
+      "path": "../",
+      "ogpImg": "ogp.jpg"
+    },
+    "mousestalker": {
+      "id": "mousestalker",
+      "category": "mousestalker",
+      "root": "pages",
+      "title": "",
+      "description": "",
+      "directory": "mousestalker/",
+      "path": "../",
+      "ogpImg": "ogp.jpg"
+    }
+  }
+}

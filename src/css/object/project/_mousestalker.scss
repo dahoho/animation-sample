@@ -1,0 +1,18 @@
+.p-mousestalker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000; // どの要素よりも一番上になるようにする
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  transition: transform linear 0.2s;
+  transform: translate(-50%, -50%);
+  &.is-active {
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+  }
+}

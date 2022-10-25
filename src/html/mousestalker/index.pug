@@ -1,0 +1,20 @@
+extends ../_layout/_page.pug
+
+block vars
+  -
+    var page = data.pages.mousestalker
+
+block contentFixedBefore
+
+block contentStatic
+
+  main.l-main.l-main--v1
+    .l-contents-in
+      //- マウスストーカー
+      .p-mousestalker.js-cursor
+      .u-ta-c
+        a.c-button-nl.c-button-nl--primary.js-link-mousestalker(href="#") button
+
+
+
+block contentFixedAfter

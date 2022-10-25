@@ -1,0 +1,16 @@
+.l-contents-in {
+  width: calc((1280 / 1366) * 100%);
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  @include l-tablet {
+    width: 100%;
+    padding-right: rem(40);
+    padding-left: rem(40);
+  }
+  @include l-mobile {
+    width: 100%;
+    padding-right: sp(20);
+    padding-left: sp(20);
+  }
+}

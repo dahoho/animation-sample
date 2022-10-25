@@ -1,0 +1,19 @@
+.c-button-nl {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 60px;
+  font-weight: fw(bold);
+  color: c(white-nl);
+  background-color: c(black-nl);
+  @include l-mobile {
+    width: sp(280);
+    height: sp(60);
+  }
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background-color: #30a2d2;
+    }
+  }
+}

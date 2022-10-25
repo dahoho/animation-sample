@@ -1,0 +1,24 @@
+extends ../_layout/_page.pug
+
+block vars
+  -
+    var page = data.pages.fade_img
+
+block contentFixedBefore
+
+block contentStatic
+
+  p.u-fz-24.u-fz-sp-18.u-ta-c.u-fw-bold.u-mt-40.u-mt-sp-20
+    |スクロールしてください
+  main.l-main.l-main--v2
+    .l-contents-in
+      figure.p-fade-img.js-scrollTrigger
+        img(src=`${page.path}assets/images/fade-img/img01.jpg` alt=`` decoding=`async`)
+      figure.p-fade-img.u-mt-100.u-mt-sp-40.js-scrollTrigger
+        img(src=`${page.path}assets/images/fade-img/img02.jpg` alt=`` decoding=`async`)
+      figure.p-fade-img.u-mt-100.u-mt-sp-40.js-scrollTrigger
+        img(src=`${page.path}assets/images/fade-img/img03.jpg` alt=`` decoding=`async`)
+
+
+
+block contentFixedAfter

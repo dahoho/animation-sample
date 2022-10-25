@@ -1,0 +1,20 @@
+.l-main {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  &--v1 {
+    padding-top: 100px;
+    padding-bottom: 1000px;
+    @include l-mobile {
+      padding-top: sp(60);
+      padding-bottom: sp(600);
+    }
+  }
+  &--v2 {
+    padding-top: 1000px;
+    padding-bottom: 1000px;
+    @include l-mobile {
+      padding-top: sp(800);
+      padding-bottom: sp(600);
+    }
+  }
+}

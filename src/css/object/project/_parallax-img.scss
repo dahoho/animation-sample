@@ -1,0 +1,14 @@
+.p-parallax-img {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
