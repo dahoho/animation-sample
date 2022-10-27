@@ -33,7 +33,7 @@ export default function () {
     const textAnimationTarget = [...document.querySelectorAll('.js-text-animation span')];
     gsap.to(textAnimationTarget, {
       opacity: 1,
-      stagger: 0.1,
+      stagger: 0.02,
     });
   });
   // =======================================================================

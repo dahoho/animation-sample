@@ -6,12 +6,12 @@
 
 .p-text-animation-curtain {
   position: relative;
-  overflow: hidden;
   // センター寄せする場合
-  max-inline-size: max-content;
-  margin-inline: auto;
+  // max-inline-size: max-content;
+  // margin-inline: auto;
   // センター寄せしない場合
-  // display: inline-block;
+  display: inline-block;
+  overflow: hidden;
   &__rect {
     position: absolute;
     top: 0;
