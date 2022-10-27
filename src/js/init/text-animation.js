@@ -9,24 +9,31 @@ export default function () {
     const textAnimation = [...document.querySelectorAll('.js-text-animation')];
 
     textAnimation.map((target) => {
-      let newText = '';
-      const text = target.textContent;
-      const result = text.split('');
-      result.map((target) => {
-        newText += '<span>' + target + '</span>';
+      let nodes = [...target.childNodes];
+
+      let textBox = '';
+      nodes.map((node) => {
+        console.log(node);
+        if (node.nodeType === 3) {
+          // テキストの場合
+          let result = node.textContent.split('');
+          result.map((text) => {
+            textBox += '<span>' + text + '</span>';
+          });
+        } else {
+          //brの場合はそのまま連結
+          textBox = textBox + node.outerHTML;
+        }
       });
 
-      target.innerHTML = newText;
+      target.innerHTML = textBox;
     });
+
     // gsapここから
     const textAnimationTarget = [...document.querySelectorAll('.js-text-animation span')];
     gsap.to(textAnimationTarget, {
       opacity: 1,
-      stagger: {
-        amount: 1.2, //1秒ずらしてアニメーション
-        from: 'start', //要素順にアニメーション。
-        ease: 'sine.in', //イージング詳細:https://greensock.com/docs/v3/Eases
-      },
+      stagger: 0.1,
     });
   });
   // =======================================================================
