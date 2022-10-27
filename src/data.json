@@ -15,23 +15,13 @@
       "path": "",
       "ogpImg": "ogp.jpg"
     },
-    "parallax_img": {
-      "id": "parallax-img",
-      "category": "parallax-img",
+    "img_animation": {
+      "id": "img-animation",
+      "category": "img-animation",
       "root": "pages",
       "title": "",
       "description": "",
-      "directory": "parallax-img/",
-      "path": "../",
-      "ogpImg": "ogp.jpg"
-    },
-    "fade_img": {
-      "id": "fade-img",
-      "category": "fade-img",
-      "root": "pages",
-      "title": "",
-      "description": "",
-      "directory": "fade-img/",
+      "directory": "img-animation/",
       "path": "../",
       "ogpImg": "ogp.jpg"
     },

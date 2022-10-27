@@ -1,4 +1,4 @@
-.p-fade-img {
+.p-img-animation-in {
   max-width: 800px;
   margin-right: auto;
   margin-left: auto;
@@ -15,5 +15,20 @@
     transition: transform 3s cubic-bezier(0.19, 1, 0.22, 1) 0s;
     transform: scale(1.4);
     transform-origin: center;
+  }
+}
+
+.p-img-animation-parallax {
+  position: relative;
+  max-width: 800px;
+  padding-top: 56.25%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
 }

@@ -20,7 +20,7 @@ export default function () {
             start: 'top bottom', // 1つ目の値がtriggerで指定した要素の開始位置2つ目の値が画面の開始位置
             end: 'bottom top', // 1つ目の値がtriggerで指定した要素の終了位置2つ目の値が画面の終了位置
             scrub: 1, // 要素を1秒遅れで追従させる
-            // markers: true, // 開始位置、終了位置を調整確認する際に使用します
+            markers: true, // 開始位置、終了位置を調整確認する際に使用します
           },
         },
       );
