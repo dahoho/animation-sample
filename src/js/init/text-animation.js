@@ -13,7 +13,6 @@ export default function () {
 
       let textBox = '';
       nodes.map((node) => {
-        console.log(node);
         if (node.nodeType === 3) {
           // テキストの場合
           let result = node.textContent.split('');
